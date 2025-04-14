@@ -1,0 +1,182 @@
+/* Import your font (optional) */
+@import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --mainTextColor: #000;
+  --secondaryTextColor: #;
+  --mainLinkColor: #0da2b8;
+  --mainBgColor: #f9f9f9;
+  --maincardBgColor: #fff;
+  --mainborderColor: #ddd;
+  
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Readex Pro', sans-serif;
+}
+
+body {
+  background-color: var(--mainBgColor);
+  color: var(--mainTextColor);
+  line-height: 1.5em;
+  font-size: 16px;
+  padding: 1rem;
+}
+
+/* Main container */
+#container--main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: var(--maincardBgColor);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+/* Hero section */
+#wrapper--hero {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+#profile-pic {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+#user-name {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+#bio a {
+  color: var(--mainLinkColor);
+  text-decoration: none;
+}
+
+#email {
+  color: var(--secondaryTextColor);
+  font-size: 0.9rem;
+  margin-top: 0.25rem;
+}
+
+/* Sections */
+.section--page {
+  margin-bottom: 2rem;
+}
+
+.section--page h2 {
+  font-size: 1.5rem;
+  color: var(--mainTextColor);
+  margin-bottom: 1rem;
+}
+
+/* Lists */
+ul {
+  padding-left: 1.25rem;
+}
+
+ul li {
+  margin-bottom: 0.5rem;
+}
+
+/* Socials */
+#socials--list a {
+  margin-right: 1rem;
+  color: var(--mainLinkColor);
+  font-weight: 500;
+}
+
+/* Technical Skills */
+#wrapper--techstack__items ul li {
+  margin-bottom: 0.5rem;
+}
+
+#wrapper--techstack__items strong {
+  color: #000;
+}
+
+
+/* Education */
+.education-entry {
+  margin-top: 1rem;
+  padding-left: 1rem;
+  border-left: 3px solid var(--mainLinkColor);
+}
+
+.education-entry h3 {
+  font-size: 1.2rem;
+  color: var(--mainTextColor);
+}
+
+.card--technicalskills{
+  border:1px Soild var(--mainborderColor);
+  padding: .5em 1em;
+  border-radius: 5px;
+}
+/* Work History */
+.card--workhistory {
+  background: var(--maincardBgColor);
+  border-left: 4px solid var(--mainLinkColor);
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  border-radius: 6px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.05);
+}
+
+.card--workhistory strong {
+  display: block;
+  font-size: 1.1rem;
+  margin-bottom: 0.25rem;
+}
+
+.card--workhistory p {
+  color: var(--secondaryTextColor);
+  margin-bottom: 0.5rem;
+}
+
+/* Certifications */
+.card--certifications {
+  margin-bottom: 1rem;
+}
+
+.card--certifications a {
+  font-weight: 500;
+  color: var(--mainLinkColor);
+  text-decoration: none;
+}
+
+.card--certifications p {
+  font-size: 0.9rem;
+  color: var(--secondaryTextColor);
+}
+
+/* Theme Switcher */
+#theme-switcher {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.theme {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 2px solid #ccc;
+}
+
+#theme-light {
+  background-color: #fff;
+}
+
+#theme-dark {
+  background-color: #222;
+}
